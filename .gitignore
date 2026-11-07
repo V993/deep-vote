@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.vscode/
+.idea/
+
+# Generated data, trained models, and job output
+data/pregenerated/
+data/preflib/
+experiments/
+loni_output/
+*.h5
+*.pt

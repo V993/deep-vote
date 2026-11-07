@@ -1,0 +1,35 @@
+{
+    "n_voters": 99,
+    "n_cands": 29,
+    "batch_size": 32,
+    "dataset_profile_count": 120000,
+    "n_profiles": 120000,
+    "shuffle": true,
+    "num_workers": 1,
+
+    "network_type" : "NN_Super",
+    "hidden_layers": 6,
+    "hidden_layer_factor": 3,
+    "seed": 42,
+    "n_epochs": 1000,
+    "loss_fn": "L1Loss",
+    "lr": 0.001,
+    "min_lr": 0.00001,
+    "lr_optimizer": 0.001,
+    "factor": 0.5,
+    "patience": 50,
+    "device": "gpu",
+
+    "output_layer": "softmax",
+    "efficient_transform": 0,
+    "data_dir" : "data/pregenerated/",
+    "experiment_type": "supernet",
+    "save_interval": 20,
+    "concatenate": true,
+
+    "partition": "gpu2",
+    "allocation": "loni_deepvote03",
+    "walltime": "72:00:00",
+    "n_nodes": "1",
+    "n_cores": "16"
+} 

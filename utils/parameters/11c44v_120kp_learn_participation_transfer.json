@@ -1,0 +1,36 @@
+{
+    "n_voters": 29,
+    "n_cands": 7,
+    "batch_size": 32,
+    "dataset_profile_count": 1056,
+    "n_profiles": 1056,
+    "shuffle": true,
+    "num_workers": 0,
+    "data_filename": "data/pregenerated/11c_44v_1056p.h5",
+    "models_directory": "experiments/11c_44v_120000p_L1Loss_11c44v_concatenate/models",
+
+    "seed": 42,
+    "n_epochs": 200,
+    "loss_fn": "ParticipationLoss",
+    "transfer_learning": true,
+    "activation_fn": "TanH",
+    "lr": 0.001,
+    "min_lr": 0.00001,
+    "lr_optimizer": 0.001,
+    "factor": 0.5,
+    "patience": 50,
+    "device": "gpu",
+
+    "output_layer": "softmax",
+    "efficient_transform": 0,
+    "data_dir" : "data/pregenerated/",
+    "experiment_type": "majority_axiom",
+    "save_interval": false,
+    "concatenate": true,
+
+    "partition": "gpu2",
+    "allocation": "loni_ethicllms",
+    "walltime": "72:00:00",
+    "n_nodes": "1",
+    "n_cores": "16"
+} 

@@ -1,0 +1,38 @@
+
+{
+    "n_voters": 99,
+    "n_cands": 29,
+    "seed": 42,
+    "batch_size": 1,
+    "dataset_profile_count": 100000,
+    "n_profiles": 10,
+    "n_epochs": 100,
+    "shuffle": true,
+    "num_workers": 1,
+    "data_filename": "data/pregenerated/29c_99v_10p.h5",
+
+    "network_type": "NN_Transformed_LTE",
+    "hidden_layers": 6,
+    "loss_fn": "L1Loss",
+    "lr": 0.001,
+    "min_lr": 0.00001,
+    "lr_optimizer": 0.001,
+    "factor": 0.5,
+    "patience": 50,
+    "device": "cpu",
+    "activation_fn": "TanH",
+    "temperature": 0.1,
+
+    "output_layer": "softmax",
+    "efficient_transform": 0,
+    "data_dir" : "data/pregenerated/",
+    "experiment_type": "rules",
+    "save_interval": 20,
+    "concatenate": true,
+
+    "partition": "gpu2",
+    "allocation": "loni_deepvote03",
+    "walltime": "72:00:00",
+    "n_nodes": "1",
+    "n_cores": "16"
+} 

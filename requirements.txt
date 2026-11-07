@@ -1,0 +1,17 @@
+filelock==3.19.1
+h5py==3.14.0
+matplotlib==3.10.6
+networkx==3.5
+numpy
+p_tqdm==1.4.2
+h5py==3.12.1
+numpy==1.26
+torch==2.2.2
+whalrus==0.4.6
+pandas==2.0.3
+tqdm==4.63.1
+matplotlib==3.8.4
+preflibtools
+prefsampling
+torchsummary
+tables

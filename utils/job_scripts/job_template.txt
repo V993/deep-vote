@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -A {allocation}
+#SBATCH -p {partition}
+#SBATCH -t {walltime}
+#SBATCH -N {n_nodes}
+#SBATCH -n {n_cores}
+#SBATCH -J {job_name}
+#SBATCH -o /work/lmatone/deep-voting/loni_output/{outfile}.o
+#SBATCH -e /work/lmatone/deep-voting/loni_output/{outfile}.e
+#SBATCH --mail-type END
+#SBATCH --mail-type FAIL
+#SBATCH --mail-user lmatone@tulane.edu
+
+module load conda
+cd $SLURM_SUBMIT_DIR
+source activate testing
+
+echo {command}
+{command}
+echo ""
+
+exit

@@ -1,0 +1,43 @@
+{
+    "n_voters": 44,
+    "n_cands": 11,
+    "batch_size": 32,
+    "dataset_profile_count": 120000,
+    "n_profiles": 120000,
+    "shuffle": true,
+    "num_workers": 0,
+    "data_filename": "data/pregenerated/11c_44p_120kp.h5",
+
+    "z-standardize_data": false,
+    "use_xavier_weights": true,
+    "use_batch_norm": false,
+    "use_layer_norm": true,
+    "max_grad_norm": 1,
+    "dropout_rate": 0,
+    "temperature": 1,
+
+    "seed": 42,
+    "n_epochs": 1000,
+    "loss_fn": "L1Loss",
+    "activation_fn": "TanH",
+    "lr": 0.001,
+    "min_lr": 0.00001,
+    "lr_optimizer": 0.001,
+    "factor": 0.5,
+    "patience": 20,
+    "threshold": 0.0005,
+    "device": "gpu",
+
+    "output_layer": "softmax",
+    "efficient_transform": 0,
+    "data_dir" : "data/pregenerated/",
+    "experiment_type": "11c44v",
+    "save_interval": 100,
+    "concatenate": false,
+
+    "partition": "gpu2",
+    "allocation": "loni_tudai26",
+    "walltime": "24:00:00",
+    "n_nodes": "1",
+    "n_cores": "16"
+} 

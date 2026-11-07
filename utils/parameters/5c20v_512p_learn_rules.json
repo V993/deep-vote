@@ -1,0 +1,36 @@
+{
+    "n_voters": 20,
+    "n_cands": 5,
+    "batch_size": 32,
+    "dataset_profile_count": 512,
+    "n_profiles": 512,
+    "shuffle": true,
+    "num_workers": 1,
+
+    "seed": 42,
+    "n_epochs": 10,
+    "loss_fn": "L1Loss",
+    "lr": 0.001,
+    "min_lr": 0.000001,
+    "lr_optimizer": 0.001,
+    "factor": 0.5,
+    "patience": 50,
+    "device": "gpu",
+
+    "output_layer": "softmax",
+    "efficient_transform": 0,
+    "data_dir" : "data/pregenerated/",
+    "preflib_dir": "data/preflib",
+    "min_num_voters": 5,
+    "max_num_voters": 500,
+    "train_dist": "preflib",
+    "test_dist": "preflib",
+    "experiment_type": "rules",
+    "save_interval": 1,
+
+    "partition": "gpu4",
+    "allocation": "loni_deepvote03",
+    "walltime": "72:00:00",
+    "n_nodes": "1",
+    "n_cores": "16"
+} 
